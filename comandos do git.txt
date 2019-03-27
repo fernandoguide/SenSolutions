@@ -2,7 +2,8 @@ Estados
 Modificado (modified);
 Preparado (staged/index)
 Consolidado (comitted);
-Ajuda
+Ajuda 
+
 Geral
 git help
 Comando específico
