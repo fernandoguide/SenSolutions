@@ -1,176 +1,279 @@
-<!doctype html>
-<html class="no-js" lang="pt-br">
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SenSolutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/metisMenu.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
-    <!-- amchart css -->
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-    <!-- others css -->
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/default-css.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- modernizr css -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/logo-resp1.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Sens Solutions</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/hexagons.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- preloader area start -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- preloader area end -->
-    <!-- page container area start -->
-    <div class="page-container">
-        <!-- sidebar menu area start -->
-        <div class="sidebar-menu">
-            <div class="sidebar-header">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/images/icon/logo-1.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="main-menu">
-                <div class="menu-inner">
-                    <nav>
-                        <ul class="metismenu" id="menu">
-                            <li class="active">
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Dashboard</span></a>
-                                <ul class="collapse">
-                                    <li class="active"><a href="index.html">SenSolutions </a></li>
-                                </ul>
-                            </li>       
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- sidebar menu area end -->
-        <!-- main content area start -->
-        <div class="main-content">
-            <!-- header area start -->
-            <div class="header-area">
-                <div class="row align-items-center">
-                    <!-- nav and search button -->
-                    <div class="col-md-6 col-sm-8 clearfix">
-                        <div class="nav-btn pull-left">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="search-box pull-left">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search..." required>
-                                <i class="ti-search"></i>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- profile info & task notification -->
-                    <div class="col-md-6 col-sm-4 clearfix">
-                        <ul class="notification-area pull-right">
-                            <li id="full-view"><i class="ti-fullscreen"></i></li>
-                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>                         
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- header area end -->
-            <!-- page title area start -->
-            <div class="page-title-area">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="breadcrumbs-area clearfix">
-                            <h4 class="page-title pull-left">Dashboard</h4>
-                            <ul class="breadcrumbs pull-left">
-                                <li><a href="index.html">Home</a></li>
-                                <li><span>Dashboard</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 clearfix">
-                        <div class="user-profile pull-right">
-                            <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Fernando Oliveira <i class="fa fa-angle-down"></i></h4>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="login.html">Log Out</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- page title area end -->
-            <div class="main-content-inner">
-                <!-- sales report area start -->
-                <div class="sales-report-area mt-5 mb-5">
-                    
-                </div>
-                <!-- sales report area end -->
-                <!-- overview area start -->
-                <div class="row">
-                    <div class="col-xl-9 col-lg-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h4 class="header-title mb-0">Overview</h4>
-                                </div>
-                                     <!-- colocar aqui os GRAFICOS -->
-                                <div id="verview-shart"></div>  
-                            </div>
-                        </div>
-                    </div>                  
-                </div>
-            </div>
-        </div>
-        <!-- main content area end -->
-        <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-                <p>© Copyright 2018. All right reserved.<a href="#"> SenSolutions </a>.</p>
-            </div>
-        </footer>
-        <!-- footer area end-->
-    </div>
-    <!-- page container area end -->
-    
-    <!-- jquery latest version -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-    <!-- bootstrap 4 js -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <!-- start header Area -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-wh">
+        <div class="container">
 
-    <!-- start chart js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <!-- start highcharts js -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <!-- start zingchart js -->
-    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
-    <script>
-    zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
-    </script>
-    <!-- all line chart activation -->
-    <script src="assets/js/line-chart.js"></script>
-    <!-- all pie chart -->
-    <script src="assets/js/pie-chart.js"></script>
-    <!-- others plugins -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/scripts.js"></script>
+            <a href="#" class="navbar-brand">
+                <img src="img/logo-1.png" width="100">
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Projeto-Avícola.html" class="nav-link">Projetos</a>
+                    </li>
+                    
+
+                </ul>
+                <a href="login.html" class="btn btn-outline-primary ml-5 mr-2">Entrar</a>
+                <a href="register.html" class="btn btn-primary ml-5">Cadastro</a>
+            </div>
+
+
+    </nav>
+    <!-- end header Area -->
+    <!-- start banner Area -->
+    <section id="intro" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-md-6 intro-info order-md-first order-last">
+                    <h2>As melhores soluções<br>No controle de <span>Temperatura e umidade</span></h2>
+                    <p class="lead h3">Somos uma empresa que propõe uma solução simple e eficaz para o seu negócio</p>
+                </div>
+
+                <div class="col-md-6 ">
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #intro -->
+    <!-- End banner Area -->
+
+
+
+    <!-- Start fact Area -->
+
+    <!-- End fact Area -->
+
+    <!-- Start feature Area -->
+    <section class="feature-area section-gap-top">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h2 class="text-uppercase h2">Sobre nós</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#" class="title">
+                            <span class="lnr lnr-book"></span>
+                            <h3 class="h3">Missão</h3>
+                        </a>
+                        <p class="lead">
+                            A empresa Sens Solutions foi fundada em fevereiro de 2019 por seus seis integrantes do curso
+                            de Analise
+                            e Desenvolvimneto de Sistemas da Bandtec
+                            , formando uma equipe de desenvolvimento de sistemas para empresas de diversos setores.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#" class="title">
+                            <span class="lnr lnr-book"></span>
+                            <h3 class="h3">Visão</h3>
+                        </a>
+                        <p class="lead">
+                            Ser uma das maiores empresas de tecnologia do país, levando conosco
+                            nossos clientes a ascensão contínua e buscando sempre a melhor
+                            tecnologia para atendê-los.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#" class="title">
+                            <span class="lnr lnr-book"></span>
+                            <h3 class="h3"> Valores</h3>
+                        </a>
+                        <p class="lead">
+                            Cremos e utilizamos preceitos de ética, sustentabilidade e
+                            governança que nos norteiam, através de valores que estão
+                            declarados em nosso Código de Ética e Comportamento, seriedade,
+                            valorização de nossos colaboradores, responsabilidade social e
+                            respeito à natureza e ecologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End feature Area -->
+
+    <!-- Start about Area -->
+    <section class="about-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 home-about-left">
+
+                </div>
+                <div class="offset-lg-1 col-lg-5 home-about-right">
+                    <h1 class="h1">
+                        Tenha mais controle <br>
+                        do seu local <br>
+                    </h1>
+                    <p class="lead">
+                        Obtenha o controle de temperatura e umidade do seu ambiente através de nosso sistema de
+                        monitoramento
+                    </p>
+
+                </div>
+                <div class="col-lg-6 home-about-right home-about-right2">
+                    <h1 class="h1">
+                        Monitoramento <br>
+                        de temperatura e umidade <br>
+                        em tempo real
+                    </h1>
+                    <p class="lead">
+                        Monitore o a temperatura e a umidade do seu ambiente em tempo real através de um celular ou
+                        computador que tenha acesso a internet
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- End about Area -->
+
+    <!-- Start about-video Area -->
+
+    <!-- End about-video Area -->
+
+    <!-- Start Testimonials Area -->
+
+    <!-- End Testimonials Area -->
+
+    <!-- Start Screenshot Area -->
+
+    <!-- End Screenshot Area -->
+
+
+
+    <!-- Start Footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 single-footer-widget">
+                    <h4><u>Ajuda</u></h4>
+                    <ul>
+                        <li><a href="#">Dúvidas Frequentes</a></li>
+                        <li><a href="#">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 single-footer-widget">
+                    <h4><u>Institucional</u></h4>
+                    <ul>
+                        <li><a href="#">Missão</a></li>
+                        <li><a href="#">Visão</a></li>
+                        <li><a href="#">Valores</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 single-footer-widget">
+                    <h4><u>Projetos</u></h4>
+                    <ul>
+                        <li><a href="#">Avícola</a></li>
+                        <li><a href="#">Dashboards</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 single-footer-widget">
+                    <h4><u>Redes Sociais</u></h4>
+
+
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-trello fa-2x"></i></a>
+
+
+                </div>
+
+            </div>
+            <div class="footer-bottom row align-items-center">
+                <p class="footer-text m-0 col-lg-6 col-md-12">&copy; Copyright 2019. All rights reserved SenSolutions
+                </p>
+
+            </div>
+        </div>
+       
+    </footer>
+    <!-- End Footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/hexagons.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
