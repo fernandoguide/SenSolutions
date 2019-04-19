@@ -647,7 +647,7 @@
 
 .page-title-area {
     padding: 0 30px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -714,8 +714,8 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+    background: -webkit-linear-gradient(left, #14eefe 0%, #637ef5 100%);
+    background: linear-gradient(to right, #14eefe  0%, #637ef5 100%);
     padding: 17px 38px;
     position: relative;
 }
