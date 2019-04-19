@@ -116,15 +116,15 @@ if ($('#ampiechart1').length) {
 if ($('#ampiechart2').length) {
     var chart = AmCharts.makeChart("ampiechart2", {
         "type": "pie",
-        "theme": "light",
+        "theme": "",
         "labelRadius": -65,
-        "labelText": "[[title]]%",
+        "labelText": "[[title]]",
         "dataProvider": [{
-            "title": "New",
-            "value": 4852
+            "title": "Temperatura",
+            "value": 30
         }, {
-            "title": "Returning",
-            "value": 9899
+            "title": "Umidade",
+            "value": 70
         }],
         "titleField": "title",
         "valueField": "value",
