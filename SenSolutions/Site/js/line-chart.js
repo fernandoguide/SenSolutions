@@ -172,11 +172,10 @@ if ($('#coin_sales3').length) {
 if ($('#verview-shart').length) {
     var myConfig = {
         "type": "line",
-
         "scale-x": { //X-Axis
             "labels": ["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
-            "label": {
-                "font-size": 14,
+            "label":{
+                "font-size": 10,
                 "offset-x": 0,
             },
             "item": { //Scale Items (scale values or labels)
@@ -186,34 +185,34 @@ if ($('#verview-shart').length) {
                 "visible": false,
                 "line-style": "solid", //"solid", "dotted", "dashed", "dashdot"
                 "alpha": 1
-            }
+            }, 
         },
         "plot": { "aspect": "spline" },
         "series": [{
-                "values": [20, 25, 30, 35, 45, 40, 40, 35, 25, 17, 40, 50],
-                "line-color": "#F0B41A",
+                "values": [20, 25, 30, 35, 28, 20, 20, 23, 25, 17, 18, 29],
+                "line-color": "red",
                 /* "dotted" | "dashed" */
-                "line-width": 5 /* in pixels */ ,
+                "line-width": 4 /* in pixels */ ,
                 "marker": { /* Marker object */
-                    "background-color": "#D79D3B",
+                    "background-color": "red",
                     /* hexadecimal or RGB value */
                     "size": 5,
                     /* in pixels */
-                    "border-color": "#D79D3B",
+                    "border-color": "red",
                     /* hexadecimal or RBG value */
                 }
             },
             {
-                "values": [40, 45, 30, 20, 30, 35, 45, 55, 40, 30, 55, 30],
-                "line-color": "#0884D9",
+                "values": [40, 45, 35, 55, 60, 40, 70, 50, 80, 40, 90, 50],
+                "line-color": "blue",
                 /* "dotted" | "dashed" */
-                "line-width": 5 /* in pixels */ ,
+                "line-width": 4 /* in pixels */ ,
                 "marker": { /* Marker object */
-                    "background-color": "#067dce",
+                    "background-color": "blue",
                     /* hexadecimal or RGB value */
                     "size": 5,
                     /* in pixels */
-                    "border-color": "#067dce",
+                    "border-color": "blue",
                     /* hexadecimal or RBG value */
                 }
             }

@@ -7,22 +7,25 @@
     <title>SenSolutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/logo-resp1.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/metisMenu.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
     <!-- amchart css -->
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
     <!-- others css -->
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/default-css.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/default-css.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
     <!-- modernizr css -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
 <body>
@@ -40,19 +43,26 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo-branco.png" alt="logo"></a>
+                    <a href="Dashboard.html"><img src="img/logo-branco.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
-                <div class="menu-inner">
+                <div class="menu-inner ">
                     <nav>
-                        <ul class="metismenu" id="menu">
-                            <li class="active">
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Dashboard</span></a>
-                                <ul class="collapse">
-                                    <li class="active"><a href="index.html">SenSolutions </a></li>
+                        <ul class="metismenu " id="menu">
+                            <li><a class="text-light" href="Dashboard.html"><i class="fas fa-home text-primary "></i>
+                                    Home</a></li>
+                            <li class="active " Sensores>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fas fa-chart-line"></i>
+                                    Graficos</a>
+                                <ul class="collapse ">
+                                    <li class=""><a href="Dashboard.html">Em Linhas</a></li>
+                                    <li class=""><a href="Dashboard.html">Em Pizza</a></li>
+                                    <li class=""><a href="Dashboard.html">Em Barra</a></li>
                                 </ul>
-                            </li>       
+                            </li>
+
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -65,48 +75,48 @@
             <div class="header-area">
                 <div class="row align-items-center">
                     <!-- nav and search button -->
-                    <div class="col-md-6 col-sm-8 clearfix">
+                    <div class="col-md-11 col-sm-8 clearfix">
                         <div class="nav-btn pull-left">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <div class="search-box pull-left">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search..." required>
-                                <i class="ti-search"></i>
-                            </form>
-                        </div>
+
                     </div>
                     <!-- profile info & task notification -->
-                    <div class="col-md-6 col-sm-4 clearfix">
-                        <ul class="notification-area pull-right">
-                            <li id="full-view"><i class="ti-fullscreen"></i></li>
-                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>                         
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <!-- header area end -->
             <!-- page title area start -->
             <div class="page-title-area">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
+                <div class="row align-items-left">
+                    <div class="col-sm-9 col-lg-9 col-md-9">
                         <div class="breadcrumbs-area clearfix">
                             <h4 class="page-title pull-left">Dashboard</h4>
                             <ul class="breadcrumbs pull-left">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Dashboard.html">Home</a></li>
                                 <li><span>Dashboard</span></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 clearfix">
+                    <div class="col-sm-3 col-lg-3 col-md-3 clearfix">
                         <div class="user-profile pull-right">
                             <img class="avatar user-thumb" src="img/avatar.png" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Fernando Oliveira <i class="fa fa-angle-down"></i></h4>
+                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Fernando Oliveira <i
+                                    class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="login.html">Log Out</a>
+
+                                <ul class="notification-area pull-right">
+                                    <li class="dropdown-item"><a class="dropdown-link" href="login.html">Log Out</a>
+                                    </li>
+                                    <li class="dropdown-item" id="full-view"><a href="">Expandir</a> <i
+                                            class="fas fa-expand"></i></li>
+                                    <li class="dropdown-item" id="full-view-exit"><a href="">Voltar</a> <i
+                                            class="fas fa-compress-arrows-alt"></i></li>
+                                </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -115,7 +125,7 @@
             <div class="main-content-inner">
                 <!-- sales report area start -->
                 <div class="sales-report-area mt-5 mb-5">
-                    
+
                 </div>
                 <!-- sales report area end -->
                 <!-- overview area start -->
@@ -126,77 +136,472 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h4 class="header-title mb-0">Overview</h4>
                                 </div>
-                                     <!-- colocar aqui os GRAFICOS -->
-                                <div id="verview-shart"></div>  
+                                <!-- colocar aqui os GRAFICOS -->
+                                <div id="verview-shart"></div>
+
+                                <div id="ampiechart2" style="overflow: hidden; text-align: left;">
+                                    <div class="amcharts-main-div" style="position: relative;">
+
+                                        <div class="amcharts-chart-div"
+                                            style="overflow: hidden; position: relative; text-align: left; width: 881px; height: 400px; padding: 0px;">
+                                            <svg version="1.1"
+                                                style="position: absolute; width: 881px; height: 400px; top: 0px; left: 0px;">
+                                                <desc>JavaScript chart by amCharts 3.21.14</desc>
+                                                <g>
+                                                    <path cs="100,100" d="M0.5,0.5 L880.5,0.5 L880.5,399.5 L0.5,399.5 Z"
+                                                        fill="#FFFFFF" stroke="#000000" fill-opacity="0"
+                                                        stroke-width="1" stroke-opacity="0"></path>
+                                                </g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g>
+                                                    <g aria-label="Umidade: 32.89% " opacity="1">
+                                                        <path cs="1000,1000"
+                                                            d=" M440.5,200 L440.5,78 A122,122,0,0,1,547.8032817492976,258.05175041142894 L440.5,200 Z"
+                                                            fill="blue" stroke="#FFFFFF" stroke-width="2"
+                                                            stroke-opacity="1" fill-opacity="1"></path>
+                                                    </g>
+                                                    <g aria-label="Temperatura: 67.11% " opacity="1">
+                                                        <path cs="1000,1000"
+                                                            d=" M440.5,200 L547.8032817492976,258.05175041142894 A122,122,0,1,1,440.49999999999994,78 L440.5,200 Z"
+                                                            fill="red" stroke="#FFFFFF" stroke-width="2"
+                                                            stroke-opacity="1" fill-opacity="1"></path>
+                                                    </g>
+                                                </g>
+                                                <g></g>
+                                                <g>
+                                                    <g><text y="6" fill="#fff" font-family="Verdana" font-size="11px"
+                                                            opacity="1" text-anchor="middle"
+                                                            transform="translate(489,171)"
+                                                            style="pointer-events: none; cursor: default;"
+                                                            visibility="visible">
+                                                            <tspan y="6" x="0">Umidade</tspan>
+                                                        </text></g>
+                                                    <g><text y="6" fill="#fff" font-family="Verdana" font-size="11px"
+                                                            opacity="1" text-anchor="middle"
+                                                            transform="translate(392,229)"
+                                                            style="pointer-events: none; cursor: default;"
+                                                            visibility="visible">
+                                                            <tspan y="6" x="0">Temperatura</tspan>
+                                                        </text></g>
+                                                </g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g>
+                                                    <g></g>
+                                                </g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                            </svg><a href="http://www.amcharts.com" title="JavaScript charts"
+                                                target="_self"
+                                                style="position: absolute; text-decoration: none; color: rgb(255, 255, 255); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;">JS
+                                                chart by amCharts</a></div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div id="ambarchart3" style="overflow: hidden; text-align: left;">
+                                            <div class="amcharts-main-div" style="position: relative;">
+                                                <div class="amcharts-chart-div"
+                                                    style="overflow: hidden; position: relative; text-align: left; width: 829px; height: 400px; padding: 0px; touch-action: auto;">
+                                                    <svg version="1.1"
+                                                        style="position: absolute; width: 829px; height: 400px; top: -0.03125px; left: -0.40625px;">
+                                                        <desc>JavaScript chart by amCharts 3.21.14</desc>
+                                                        <g>
+                                                            <path cs="100,100"
+                                                                d="M0.5,0.5 L828.5,0.5 L828.5,399.5 L0.5,399.5 Z"
+                                                                fill="#FFFFFF" stroke="#000000" fill-opacity="0"
+                                                                stroke-width="1" stroke-opacity="0"></path>
+                                                            <path cs="100,100"
+                                                                d="M0.5,0.5 L753.5,0.5 L753.5,347.5 L0.5,347.5 L0.5,0.5 Z"
+                                                                fill="#FFFFFF" stroke="#000000" fill-opacity="0"
+                                                                stroke-width="1" stroke-opacity="0"
+                                                                transform="translate(55,32)"></path>
+                                                        </g>
+                                                        <g>
+                                                            <g transform="translate(55,32)">
+                                                                <g>
+                                                                    <path cs="100,100" d="M0.5,35.5 L6.5,35.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.3" stroke="#000000"
+                                                                        transform="translate(-6,0)"></path>
+                                                                    <path cs="100,100" d="M0.5,0.5 L0.5,0.5 L753.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100" d="M0.5,104.5 L6.5,104.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.3" stroke="#000000"
+                                                                        transform="translate(-6,0)"></path>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,69.5 L0.5,69.5 L753.5,69.5" fill="none"
+                                                                        stroke-width="1" stroke-opacity="0.1"
+                                                                        stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100" d="M0.5,174.5 L6.5,174.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.3" stroke="#000000"
+                                                                        transform="translate(-6,0)"></path>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,139.5 L0.5,139.5 L753.5,139.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100" d="M0.5,243.5 L6.5,243.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.3" stroke="#000000"
+                                                                        transform="translate(-6,0)"></path>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,208.5 L0.5,208.5 L753.5,208.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100" d="M0.5,312.5 L6.5,312.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.3" stroke="#000000"
+                                                                        transform="translate(-6,0)"></path>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,277.5 L0.5,277.5 L753.5,277.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,347.5 L0.5,347.5 L753.5,347.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(55,32)" visibility="visible">
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M0.5,347.5 L0.5,347.5 L0.5,0.5" fill="none"
+                                                                        stroke-width="1" stroke-opacity="0.1"
+                                                                        stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M94.5,347.5 L94.5,347.5 L94.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M188.5,347.5 L188.5,347.5 L188.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M282.5,347.5 L282.5,347.5 L282.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M377.5,347.5 L377.5,347.5 L377.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M471.5,347.5 L471.5,347.5 L471.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M565.5,347.5 L565.5,347.5 L565.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M659.5,347.5 L659.5,347.5 L659.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                                <g>
+                                                                    <path cs="100,100"
+                                                                        d="M753.5,347.5 L753.5,347.5 L753.5,0.5"
+                                                                        fill="none" stroke-width="1"
+                                                                        stroke-opacity="0.1" stroke="#000000"></path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                        <g></g>
+                                                        <g></g>
+                                                        <g></g>
+                                                        <g></g>
+                                                        <g>
+                                                            <g transform="translate(55,32)">
+                                                                <g>
+                                                                    <g transform="translate(0,7)"
+                                                                        aria-label="Income 2014 23.5">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L353.5,25.5 L353.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#7474f0" stroke="#67b7dc"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,76)"
+                                                                        aria-label="Income 2015 26.2">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L480.5,25.5 L480.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#7474f0" stroke="#67b7dc"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,146)"
+                                                                        aria-label="Income 2016 30.1">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L664.5,25.5 L664.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#7474f0" stroke="#67b7dc"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,215)"
+                                                                        aria-label="Income 2017 29.5">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L635.5,25.5 L635.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#7474f0" stroke="#67b7dc"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,284)"
+                                                                        aria-label="Income 2018 24.6">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L405.5,25.5 L405.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#7474f0" stroke="#67b7dc"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                            <g transform="translate(55,32)">
+                                                                <g>
+                                                                    <g transform="translate(0,37)"
+                                                                        aria-label="Expenses 2014 18.1">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L99.5,25.5 L99.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#C5C5FD" stroke="#fdd400"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,106)"
+                                                                        aria-label="Expenses 2015 22.8">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L320.5,25.5 L320.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#C5C5FD" stroke="#fdd400"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,176)"
+                                                                        aria-label="Expenses 2016 23.9">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L372.5,25.5 L372.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#C5C5FD" stroke="#fdd400"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,245)"
+                                                                        aria-label="Expenses 2017 25.1">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L428.5,25.5 L428.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#C5C5FD" stroke="#fdd400"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                    <g transform="translate(0,314)"
+                                                                        aria-label="Expenses 2018 25">
+                                                                        <path cs="100,100"
+                                                                            d="M0.5,0.5 L0.5,25.5 L424.5,25.5 L424.5,0.5 L0.5,0.5 Z"
+                                                                            fill="#C5C5FD" stroke="#fdd400"
+                                                                            fill-opacity="0.8" stroke-width="1"
+                                                                            stroke-opacity="0.2"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                        <g></g>
+                                                        <g>
+                                                            <g>
+                                                                <path cs="100,100" d="M0.5,0.5 L0.5,347.5" fill="none"
+                                                                    stroke-width="1" stroke-opacity="0.3"
+                                                                    stroke="#000000" transform="translate(55,32)">
+                                                                </path>
+                                                            </g>
+                                                            <g>
+                                                                <path cs="100,100" d="M0.5,0.5 L753.5,0.5" fill="none"
+                                                                    stroke-width="1" stroke-opacity="0" stroke="#000000"
+                                                                    transform="translate(55,32)" visibility="visible">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                        <g></g>
+                                                        <g></g>
+                                                        <g>
+                                                            <g transform="translate(55,32)"></g>
+                                                            <g transform="translate(55,32)"></g>
+                                                        </g>
+                                                        <g>
+                                                            <g></g>
+                                                        </g>
+                                                        <g>
+                                                            <g transform="translate(55,32)" visibility="visible"><text
+                                                                    y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="end"
+                                                                    transform="translate(-12,33.7)">
+                                                                    <tspan y="6" x="0">2014</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="end"
+                                                                    transform="translate(-12,102.7)">
+                                                                    <tspan y="6" x="0">2015</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="end"
+                                                                    transform="translate(-12,172.7)">
+                                                                    <tspan y="6" x="0">2016</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="end"
+                                                                    transform="translate(-12,241.7)">
+                                                                    <tspan y="6" x="0">2017</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="end"
+                                                                    transform="translate(-12,310.7)">
+                                                                    <tspan y="6" x="0">2018</tspan>
+                                                                </text></g>
+                                                            <g transform="translate(55,32)" visibility="visible"><text
+                                                                    y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(0,-17.5)">
+                                                                    <tspan y="6" x="0">16</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(94,-17.5)">
+                                                                    <tspan y="6" x="0">18</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(188,-17.5)">
+                                                                    <tspan y="6" x="0">20</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(282,-17.5)">
+                                                                    <tspan y="6" x="0">22</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(377,-17.5)">
+                                                                    <tspan y="6" x="0">24</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(471,-17.5)">
+                                                                    <tspan y="6" x="0">26</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(565,-17.5)">
+                                                                    <tspan y="6" x="0">28</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(659,-17.5)">
+                                                                    <tspan y="6" x="0">30</tspan>
+                                                                </text><text y="6" fill="#000000" font-family="Verdana"
+                                                                    font-size="11px" opacity="1" text-anchor="middle"
+                                                                    transform="translate(753,-17.5)">
+                                                                    <tspan y="6" x="0">32</tspan>
+                                                                </text></g>
+                                                        </g>
+                                                        <g></g>
+                                                        <g transform="translate(55,32)"></g>
+                                                        <g></g>
+                                                        <g></g>
+                                                    </svg><a href="http://www.amcharts.com" title="JavaScript charts"
+                                                        style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 60px; top: 37px;">JS
+                                                        chart by amCharts</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
             </div>
         </div>
         <!-- main content area end -->
         <!-- Start Footer Area -->
-    <footer class="footer-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 single-footer-widget">
-                    <h4><u>Ajuda</u></h4>
-                    <ul>
-                        <li><a href="#">Dúvidas Frequentes</a></li>
-                        <li><a href="#">FAQ</a></li>
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 single-footer-widget">
+                        <h4><u>Ajuda</u></h4>
+                        <ul>
+                            <li><a href="#">Dúvidas Frequentes</a></li>
+                            <li><a href="#">FAQ</a></li>
 
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 single-footer-widget">
+                        <h4><u>Institucional</u></h4>
+                        <ul>
+                            <li><a href="#">Missão</a></li>
+                            <li><a href="#">Visão</a></li>
+                            <li><a href="#">Valores</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 single-footer-widget">
+                        <h4><u>Projetos</u></h4>
+                        <ul>
+                            <li><a href="#">Avícola</a></li>
+                            <li><a href="Dashboard.html">Dashboards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 single-footer-widget">
+                        <h4><u>Redes Sociais</u></h4>
+
+
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-trello fa-2x"></i></a>
+
+
+                    </div>
+
                 </div>
-                <div class="col-lg-3 col-md-3 single-footer-widget">
-                    <h4><u>Institucional</u></h4>
-                    <ul>
-                        <li><a href="#">Missão</a></li>
-                        <li><a href="#">Visão</a></li>
-                        <li><a href="#">Valores</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 single-footer-widget">
-                    <h4><u>Projetos</u></h4>
-                    <ul>
-                        <li><a href="#">Avícola</a></li>
-                        <li><a href="#">Dashboards</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 single-footer-widget">
-                    <h4><u>Redes Sociais</u></h4>
-
-
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-trello fa-2x"></i></a>
-
+                <div class="footer-bottom row align-items-center">
+                    <p class="footer-text m-0 col-lg-6 col-md-12">&copy; Copyright 2019. All rights reserved
+                        SenSolutions
+                    </p>
 
                 </div>
-
             </div>
-            <div class="footer-bottom row align-items-center">
-                <p class="footer-text m-0 col-lg-6 col-md-12">&copy; Copyright 2019. All rights reserved SenSolutions
-                </p>
 
-            </div>
-        </div>
-       
-    </footer>
-    <!-- End Footer Area -->
+        </footer>
+        <!-- End Footer Area -->
     </div>
     <!-- page container area end -->
-    
+
     <!-- jquery latest version -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <!-- bootstrap 4 js -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
 
     <!-- start chart js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
@@ -205,16 +610,25 @@
     <!-- start zingchart js -->
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <script>
-    zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
+        zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
     </script>
     <!-- all line chart activation -->
-    <script src="assets/js/line-chart.js"></script>
-    <!-- all pie chart -->
-    <script src="assets/js/pie-chart.js"></script>
+    <script src="js/line-chart.js"></script>
     <!-- others plugins -->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- start amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <!-- all bar chart activation -->
+    <script src="js/bar-chart.js"></script>
+    <!-- all pie chart -->
+    <script src="js/pie-chart.js"></script>
 </body>
 
 </html>

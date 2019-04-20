@@ -363,34 +363,34 @@ if ($('#ambarchart2').length) {
 
         "dataProvider": [{
             "year": 2013,
-            "income": 23.5,
-            "expenses": 21.1,
+            "umidade": 23.5,
+            "temperatura": 21.1,
             "color": "#7474f0"
         }, {
             "year": 2014,
-            "income": 26.2,
-            "expenses": 30.5,
+            "umidade": 26.2,
+            "temperatura": 30.5,
             "color": "#7474f0"
         }, {
             "year": 2015,
-            "income": 30.1,
-            "expenses": 34.9,
+            "umidade": 30.1,
+            "temperatura": 34.9,
             "color": "#7474f0"
         }, {
             "year": 2016,
-            "income": 29.5,
-            "expenses": 31.1,
+            "umidade": 29.5,
+            "temperatura": 31.1,
             "color": "#7474f0"
         }, {
             "year": 2017,
-            "income": 30.6,
-            "expenses": 28.2,
+            "umidade": 30.6,
+            "temperatura": 28.2,
             "dashLengthLine": 5,
             "color": "#7474f0"
         }, {
             "year": 2018,
-            "income": 34.1,
-            "expenses": 32.9,
+            "umidade": 34.1,
+            "temperatura": 32.9,
             "dashLengthColumn": 5,
             "alpha": 0.2,
             "additional": "(projection)"
@@ -405,9 +405,9 @@ if ($('#ambarchart2').length) {
             "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
             "fillAlphas": 1,
             "fillColorsField": "color",
-            "title": "Income",
+            "title": "umidade",
             "type": "column",
-            "valueField": "income",
+            "valueField": "umidade",
             "dashLengthField": "dashLengthColumn"
         }, {
             "id": "graph2",
@@ -422,8 +422,8 @@ if ($('#ambarchart2').length) {
             "bulletBorderThickness": 3,
             "fillAlphas": 0,
             "lineAlpha": 1,
-            "title": "Expenses",
-            "valueField": "expenses",
+            "title": "Umidade",
+            "valueField": "temperatura",
             "dashLengthField": "dashLengthLine"
         }],
         "categoryField": "year",
@@ -453,24 +453,24 @@ if ($('#ambarchart3').length) {
         },
         "trendLines": [],
         "graphs": [{
-                "balloonText": "Income:[[value]]",
+                "balloonText": "Umidade:[[value]]",
                 "fillAlphas": 0.8,
                 "id": "AmGraph-1",
                 "lineAlpha": 0.2,
-                "title": "Income",
+                "title": "umidade",
                 "type": "column",
-                "valueField": "income",
-                "fillColorsField": "color"
+                "valueField": "umidade",
+                "fillColorsField": "color7"
             },
             {
-                "balloonText": "Expenses:[[value]]",
+                "balloonText": "Temperatura:[[value]]",
                 "fillAlphas": 0.8,
                 "id": "AmGraph-2",
                 "lineAlpha": 0.2,
-                "title": "Expenses",
+                "title": "Temperatura",
                 "type": "column",
-                "valueField": "expenses",
-                "fillColorsField": "color2"
+                "valueField": "temperatura",
+                "fillColorsField": "color"
             }
         ],
         "guides": [],
@@ -484,38 +484,38 @@ if ($('#ambarchart3').length) {
         "titles": [],
         "dataProvider": [{
                 "year": 2014,
-                "income": 23.5,
-                "expenses": 18.1,
-                "color": "#7474f0",
-                "color2": "#C5C5FD"
+                "umidade": 53,
+                "temperatura": 28.1,
+                "color": "red",
+                "color2": "blue"
             },
             {
                 "year": 2015,
-                "income": 26.2,
-                "expenses": 22.8,
-                "color": "#7474f0",
-                "color2": "#C5C5FD"
+                "umidade": 60,
+                "temperatura": 32.8,
+                "color": "red",
+                "color2": "blue"
             },
             {
                 "year": 2016,
-                "income": 30.1,
-                "expenses": 23.9,
-                "color": "#7474f0",
-                "color2": "#C5C5FD"
+                "umidade": 50,
+                "temperatura": 43.9,
+                "color": "red",
+                "color2": "blue"
             },
             {
                 "year": 2017,
-                "income": 29.5,
-                "expenses": 25.1,
-                "color": "#7474f0",
-                "color2": "#C5C5FD"
+                "umidade": 44,
+                "temperatura": 25.1,
+                "color": "red",
+                "color2": "blue"
             },
             {
                 "year": 2018,
-                "income": 24.6,
-                "expenses": 25,
-                "color": "#7474f0",
-                "color2": "#C5C5FD"
+                "umidade": 40,
+                "temperatura": 25,
+                "color": "red",
+                "color2": "blue"
             }
         ],
         "export": {
@@ -699,28 +699,28 @@ if ($('#ambarchart6').length) {
         },
         "dataProvider": [{
             "year": 2014,
-            "income": 23.5,
-            "expenses": 18.1,
+            "umidade": 23.5,
+            "temperatura": 18.1,
             "color": "#952FFE"
         }, {
             "year": 2015,
-            "income": 26.2,
-            "expenses": 22.8,
+            "umidade": 26.2,
+            "temperatura": 22.8,
             "color": "#5182DE"
         }, {
             "year": 2016,
-            "income": 30.1,
-            "expenses": 23.9,
+            "umidade": 30.1,
+            "temperatura": 23.9,
             "color": "#8282F1"
         }, {
             "year": 2017,
-            "income": 29.5,
-            "expenses": 25.1,
+            "umidade": 29.5,
+            "temperatura": 25.1,
             "color": "#B369FE"
         }, {
             "year": 2018,
-            "income": 24.6,
-            "expenses": 25,
+            "umidade": 24.6,
+            "temperatura": 25,
             "color": "#51ADDD"
         }],
         "valueAxes": [{
@@ -732,11 +732,11 @@ if ($('#ambarchart6').length) {
         "startDuration": 1,
         "graphs": [{
             "balloonText": "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>",
-            "title": "Income",
+            "title": "umidade",
             "type": "column",
             "fillAlphas": 1,
             "fillColorsField": "color",
-            "valueField": "income"
+            "valueField": "umidade"
         }, {
             "balloonText": "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>",
             "bullet": "round",
@@ -748,8 +748,8 @@ if ($('#ambarchart6').length) {
             "lineThickness": 2,
             "lineAlpha": 1,
             "bulletSize": 7,
-            "title": "Expenses",
-            "valueField": "expenses"
+            "title": "Umidade",
+            "valueField": "temperatura"
         }],
         "rotate": true,
         "categoryField": "year",
