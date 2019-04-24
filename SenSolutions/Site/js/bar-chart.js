@@ -484,36 +484,36 @@ if ($('#ambarchart3').length) {
         "titles": [],
         "dataProvider": [{
                 "year": 2014,
-                "umidade": 53,
-                "temperatura": 28.1,
+                "umidade": Math.floor((Math.random() * 99) + 1),
+                "temperatura": Math.floor((Math.random() * 40) + 1),
                 "color": "red",
                 "color2": "blue"
             },
             {
                 "year": 2015,
-                "umidade": 60,
-                "temperatura": 32.8,
+                "umidade": Math.floor((Math.random() * 99) + 1),
+                "temperatura":  Math.floor((Math.random() * 40) + 1),
                 "color": "red",
                 "color2": "blue"
             },
             {
                 "year": 2016,
-                "umidade": 50,
-                "temperatura": 43.9,
+                "umidade": Math.floor((Math.random() * 99) + 1),
+                "temperatura":  Math.floor((Math.random() * 40) + 1),
                 "color": "red",
                 "color2": "blue"
             },
             {
                 "year": 2017,
-                "umidade": 44,
-                "temperatura": 25.1,
+                "umidade": Math.floor((Math.random() * 99) + 1),
+                "temperatura":  Math.floor((Math.random() * 40) + 1),
                 "color": "red",
                 "color2": "blue"
             },
             {
                 "year": 2018,
-                "umidade": 40,
-                "temperatura": 25,
+                "umidade": Math.floor((Math.random() * 99) + 1),
+                "temperatura":  Math.floor((Math.random() * 40) + 1),
                 "color": "red",
                 "color2": "blue"
             }
@@ -808,3 +808,5 @@ if ($('#socialads').length) {
     });
 }
 /*--------------  bar chart 14 highchart END ------------*/
+
+

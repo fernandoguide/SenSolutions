@@ -189,7 +189,20 @@ if ($('#verview-shart').length) {
         },
         "plot": { "aspect": "spline" },
         "series": [{
-                "values": [20, 25, 30, 35, 28, 20, 20, 23, 25, 17, 18, 29],
+                "values": [
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1),
+                    Math.floor((Math.random() * 40) + 1)
+                ],
                 "line-color": "red",
                 /* "dotted" | "dashed" */
                 "line-width": 4 /* in pixels */ ,
@@ -203,7 +216,20 @@ if ($('#verview-shart').length) {
                 }
             },
             {
-                "values": [40, 45, 35, 55, 60, 40, 70, 50, 80, 40, 90, 50],
+                "values": [
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                    Math.floor((Math.random() * 99) + 1),
+                ],
                 "line-color": "blue",
                 /* "dotted" | "dashed" */
                 "line-width": 4 /* in pixels */ ,
@@ -226,6 +252,8 @@ if ($('#verview-shart').length) {
         width: "100%"
     });
 }
+
+
 
 /*--------------  overview-chart END ------------*/
 
@@ -1608,7 +1636,7 @@ if ($('#user-statistics').length) {
             "value": 40
         }, {
             "date": "2012-09-10",
-            "value": 39
+            "value": 99
         }, {
             "date": "2012-09-11",
             "value": 34
