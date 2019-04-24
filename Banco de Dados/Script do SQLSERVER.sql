@@ -6,6 +6,7 @@ nomeUsuario varchar(40),
 senhaUsuario varchar(40),
 Email varchar(40)
 )
+go
 
 CREATE TABLE tb_Local (
 numero varchar(40),
@@ -16,6 +17,7 @@ fkCliente int,
 fkEndereco int,
 FOREIGN KEY(fkCliente) REFERENCES tb_Cliente (idCliente)
 )
+go
 
 CREATE TABLE tb_Sensor (
 idSensor int PRIMARY KEY IDENTITY,
@@ -27,7 +29,7 @@ Umid_Min varchar(40),
 Umid_Max varchar(40),
 fkTemp_Umid int
 )
-
+go
 CREATE TABLE tb_Endereco (
 idEndereco int PRIMARY KEY,
 CEP varchar(20),
@@ -36,19 +38,20 @@ estado varchar(40),
 bairro varchar(40),
 cidade varchar(40)
 )
-
+go
 CREATE TABLE tb_Eventos (
 idTemp_Umid int PRIMARY KEY IDENTITY,
 Temperatura int,
 Umidade int,
 dataHora datetime
 )
-
+go
 ALTER TABLE tb_Local ADD FOREIGN KEY(fkSensor) REFERENCES tb_Sensor (idSensor)
+go
 ALTER TABLE tb_Local ADD FOREIGN KEY(fkEndereco) REFERENCES tb_Endereco (idEndereco)
+go
 ALTER TABLE tb_Sensor ADD FOREIGN KEY(fkTemp_Umid) REFERENCES tb_Eventos (idTemp_Umid)
-
-
+go
 
 
 /* Inserindo os dados da tabela tb_cliente */
