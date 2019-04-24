@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -75,29 +77,28 @@
               </header>
             <!-- end header Area -->
 
-            <div class="comment-form">
+            <div class="container mb-5">
                 <h2>Entre em Contato</h2>
                 <form>
-                    <div class="form-group form-inline">
-                        <div class="form-group col-lg-6 col-md-12 name">
-                            <input type="text" class="form-control" id="name" placeholder="Seu nome" onfocus="this.placeholder = ''"
-                             onblur="this.placeholder = 'Seu nome'">
-                        </div>
-                        <div class="form-group col-lg-6 col-md-12 email">
-                            <input type="email" class="form-control" id="email" placeholder="endereço de e-mail" onfocus="this.placeholder = ''"
-                             onblur="this.placeholder = 'endereço de e-mail'">
-                        </div>
-                        
+                    <div class="form-label-group">
+                        <input type="text" id="inputnome" class="form-control" placeholder="nome" required autofocus>
+                        <label for="inputnome">Nome</label>
                     </div>
-                    <div class="form-group row col-lg-4 col-md-12 telefone">
-                        <input type="text" class="form-control" id="telefone" placeholder="Telefone" onfocus="this.placeholder = ''"
-                         onblur="this.placeholder = 'Telefone'">
-                    </div>      
-                    <div class="form-group">
-                        <textarea class="form-control mb-10" rows="7" name="message" placeholder="Mensagem" onfocus="this.placeholder = ''"
-                         onblur="this.placeholder = 'Mensagem'" required=""></textarea>
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                        <label for="inputEmail">Email</label>
                     </div>
-                    <a href="#" class="primary-btn">Enviar comentário</a>
+                    <div class="form-label-group">
+                        <input type="text" id="inputtelefone" class="form-control" placeholder="telefone" required autofocus>
+                        <label for="inputtelefone">Telefone</label>
+                    </div>   
+                    <div class="form-label-group">
+                        <textarea class="form-control mb-10" rows="7" name="message" placeholder="Digite suas Dúvidas" onfocus="this.placeholder = ''"
+                         onblur="this.placeholder = 'Digite suas Dúvidas'" required=""></textarea>
+                    </div>
+                    <div class="mx-auto  text-center">
+                    <a href="#" class="primary-btn">Enviar</a>
+                </div>
                 </form>
             </div>
    
@@ -172,3 +173,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
