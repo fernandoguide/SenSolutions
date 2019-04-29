@@ -41,7 +41,6 @@ var t1 = new Chart(temper, {
 }
 });
 
-
 var umidade = umid.getContext('2d');
 var t2 = new Chart(umidade, {
     type: 'line',

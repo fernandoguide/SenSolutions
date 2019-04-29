@@ -39,27 +39,3 @@ socket.on('temp', function(data) { //Assim q o temp é recebido
 
 });
 
-
-// socket.on('umid', function(data) { //Assim q o umid é recebido
-
-//     console.log(data.umid);
-
-//     // date.innerHTML = data.date; //Define a data
-
-//     if(t2.data.labels.length <=  15) { //Se houver menos de 15 dados
-//         t2.data.labels.push(data.time);  //Coloca o horário no eixo X
-//         t2.data.datasets.forEach((dataset) => {
-//             dataset.data.push(data.umid); //Adiciona a Umidade no eixo Y
-//         });
-//     }
-//     else {
-//         t2.data.labels.shift(); //Remove o primeiro registro de horário
-//         t2.data.labels.push(data.time); //Insere a data atual
-//         t2.data.datasets.forEach((dataset) => {
-//             dataset.data.shift(); //Remove o primeiro registro de Umidade
-//             dataset.data.push(data.umid); //Insere um novo registro de Umidade
-//         });
-//     }
-//     t2.update(); //Atualiza o gráfico
-
-// });
