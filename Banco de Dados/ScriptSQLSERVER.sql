@@ -14,7 +14,7 @@ complemento varchar(40),
 idLocal int PRIMARY KEY IDENTITY,
 fkSensor int,
 fkCliente int,
-fkEndereco int,
+fkcep varchar(20),
 FOREIGN KEY(fkCliente) REFERENCES tb_Cliente (idCliente)
 )
 go
@@ -31,8 +31,7 @@ fkTemp_Umid int
 )
 go
 CREATE TABLE tb_Endereco (
-idEndereco int PRIMARY KEY,
-CEP varchar(20),
+CEP varchar(20) PRIMARY KEY,
 logradouro varchar(40),
 estado varchar(40),
 bairro varchar(40),
@@ -48,7 +47,7 @@ dataHora datetime
 go
 ALTER TABLE tb_Local ADD FOREIGN KEY(fkSensor) REFERENCES tb_Sensor (idSensor)
 go
-ALTER TABLE tb_Local ADD FOREIGN KEY(fkEndereco) REFERENCES tb_Endereco (idEndereco)
+ALTER TABLE tb_Local ADD FOREIGN KEY(fkcep) REFERENCES tb_Endereco (CEP)
 go
 ALTER TABLE tb_Sensor ADD FOREIGN KEY(fkTemp_Umid) REFERENCES tb_Eventos (idTemp_Umid)
 go
@@ -83,22 +82,21 @@ insert into tb_Sensor values('serial do Sensor 600','LADO d','35°C','18°C','30
 
 /* inserindo dados na tabela tb_Endereco */
 
-insert into tb_Endereco values(1,'02805050','Rua Emilio monassa','SP','Freguesia do O',' Sao Paulo') go
-insert into tb_Endereco values(2,'1112223','Rua do eduardo','SP','Mooca',' Sao Paulo') go
-insert into tb_Endereco values(3,'1234456','Rua do Luis','SP','Casa Verde',' Sao Paulo') go
+insert into tb_Endereco values('02805050','Rua Emilio monassa','SP','Freguesia do O',' Sao Paulo') go
+insert into tb_Endereco values('11122236','Rua do eduardo','SP','Mooca',' Sao Paulo') go
+insert into tb_Endereco values('12344568','Rua do Luis','SP','Casa Verde',' Sao Paulo') go
 
 -- select * from tb_Endereco 
 
 /* inserindo dados na tabela tb_Local */
 
-insert into tb_Local values ('N° 188',' casa 1',1,1,1) go
-insert into tb_Local values ('N° 257',' casa 2',2,2,2) go
-insert into tb_Local values ('N° 333',' ap 57 bloco A',1,3,3) go
+insert into tb_Local values ('N° 188',' casa 1',1,1,'02805050') go
+insert into tb_Local values ('N° 257',' casa 2',2,2,'11122236') go
+insert into tb_Local values ('N° 333',' ap 57 bloco A',1,3,'12344568') go
 
 -- select * from tb_Local
 
--- delete from tb_Local where idLocal = 5;
-
+-- delete from tb_Local where idLocal = 1;
 
 /* Comandos para dropar as tabelas do banco */
 /*
