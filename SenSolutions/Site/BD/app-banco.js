@@ -25,7 +25,7 @@ var configuracoes = {
         }
     }
 }
- 
+
 var sql = require('mssql');
 sql.on('error', err => {
     console.error(`Erro de Conexão: ${err}`);
@@ -34,9 +34,9 @@ sql.on('error', err => {
 var perfil = desenvolvimento ? 'desenvolvimento' : 'producao';
 
 function conectar() {
-  return sql.connect(configuracoes[perfil])
-  // return new sql.ConnectionPool();  
-} 
+    return sql.connect(configuracoes[perfil])
+    // return new sql.ConnectionPool();  
+}
 
 module.exports = {
     conectar: conectar,
@@ -48,7 +48,7 @@ module.exports = {
 //     password: '',
 //     server: '...', // You can use 'localhost\\instance' to connect to named instance
 //     database: '',
- 
+
 //     options: {
 //         encrypt: true // Use this if you're on Windows Azure
 //     }
@@ -60,21 +60,21 @@ module.exports = {
 
 //             sql.close();
 //             sql.connect(config, err => {
-             
+
 //                 var request = new sql.Request()
-            
+
 //                 if(err){
 //                     console.log(err);
-                    
+
 //                 }else{
 //                     resolve(request);
 
 //                 }
-                
-             
-                
+
+
+
 //             });
 //         });
-        
+
 //     }
 // }
